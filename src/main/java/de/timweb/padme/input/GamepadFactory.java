@@ -7,7 +7,7 @@ import net.java.games.input.Controller;
 
 public class GamepadFactory {
 
-	public Gamepad createGamepad(Controller controller) {
+	public static IGamepad createGamepad(Controller controller) {
 		int axisCount = 0;
 		int buttonCount = 0;
 		System.out.println(controller);
@@ -37,7 +37,7 @@ public class GamepadFactory {
 		return null;
 	}
 
-	private void checkAxis(Component component, Identifier identifier) {
+	private static void checkAxis(Component component, Identifier identifier) {
 		if (identifier.equals(Identifier.Axis.X)) {
 		}
 		if (identifier.equals(Identifier.Axis.Y)) {

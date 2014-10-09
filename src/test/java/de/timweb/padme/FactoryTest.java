@@ -16,7 +16,7 @@ public class FactoryTest {
 
 		for (Controller controller : controllers) {
 			if (controller.getType() == Type.GAMEPAD || controller.getType() == Type.STICK) {
-				new GamepadFactory().createGamepad(controller);
+				GamepadFactory.createGamepad(controller);
 			}
 		}
 	}
